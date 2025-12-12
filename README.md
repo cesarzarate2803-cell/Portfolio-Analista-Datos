@@ -1,8 +1,6 @@
 # Portfolio-Analista-Datos
 Mi portafolio para analista de datos
 
-# Portfolio - Analista de Datos
-
 ¡Bienvenido a mi portafolio! Soy **[Tu Nombre]**, estudiante de 8vo ciclo de Ingeniería de Sistemas con especialización en Análisis de Datos. Este repositorio contiene proyectos que demuestran mis habilidades en limpieza, análisis y visualización de datos.
 
 ## Sobre Mí
