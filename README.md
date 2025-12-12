@@ -25,6 +25,7 @@ Estudiante de Ingeniería de Sistemas con sólida formación en análisis de dat
 - Google Data Analytics
 - Lean Six Sigma White Belt
 
+
 ## Proyectos
 
 ### 1. [Dashboard de Ventas - Análisis Retail](./Proyecto-1-Dashboard-Ventas)
@@ -40,8 +41,10 @@ Estudiante de Ingeniería de Sistemas con sólida formación en análisis de dat
 
 ---
 
-### 2. [Próximo Proyecto - Predicción de Ventas]
-*En desarrollo...*
+### 2. [Análisis Predictivo de Rotación de Empleados (HR Analytics)]
+## Objetivo del Proyecto
+Desarrollar un modelo de Machine Learning para predecir qué empleados tienen mayor riesgo de abandonar la empresa, identificando los factores clave que influyen en la rotación laboral (attrition) y proporcionando insights accionables para el departamento de Recursos Humanos.
+
 
 ---
 
