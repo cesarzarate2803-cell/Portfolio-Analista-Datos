@@ -1,7 +1,7 @@
 # Portfolio-Analista-Datos
-Mi portafolio para analista de datos
+**Mi portafolio para analista de datos**
 
-¡Bienvenido a mi portafolio! Soy Cesar Jesus Zarate Pomaleque, estudiante de 8vo ciclo de Ingeniería de Sistemas con especialización en Análisis de Datos. Este repositorio contiene proyectos que demuestran mis habilidades en limpieza, análisis y visualización de datos.
+¡Bienvenido a mi portafolio! Soy **Cesar Jesus Zarate Pomaleque**, estudiante de 8vo ciclo de Ingeniería de Sistemas con especialización en Análisis de Datos. Este repositorio contiene proyectos que demuestran mis habilidades en limpieza, análisis y visualización de datos.
 
 ## Sobre Mí
 
