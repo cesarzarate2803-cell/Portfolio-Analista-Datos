@@ -129,4 +129,5 @@ print("="*80)
 wlb_attrition = pd.crosstab(df['Balance de vida laboral'], df['Deserción'], normalize='index') * 100
 print(wlb_attrition)
 
-print("\n Análisis exploratorio completado")
+# =============================================================================
+print("okey")
