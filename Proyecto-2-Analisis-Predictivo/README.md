@@ -301,12 +301,6 @@ Objetivo: Elevar a nivel 2-3 en 90 días
 - Política flexible por departamento
 - Subsidio de transporte para presenciales
 
-#### **6. Dashboard Predictivo de Deserción (automatizado)**
-- Implementar modelo en producción
-- Alertas mensuales automáticas de empleados en riesgo
-- KPIs de retención en dashboards gerenciales
-- Seguimiento de efectividad de intervenciones
-
 ---
 ## Habilidades Demostradas
 
