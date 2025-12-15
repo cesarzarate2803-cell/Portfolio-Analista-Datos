@@ -5,7 +5,7 @@ Analizar el desempeño comercial de una cadena de tiendas retail para identifica
 
 ## Preview del Dashboard
 
-![Dashboard](Dashboard-Ventas-Superstore.pdf)
+![Dashboard-Ventas-Superstore](Dashboard-Ventas-Superstore.pdf)
 
 ## Herramientas Utilizadas
 - **Microsoft Excel**: Limpieza de datos, análisis exploratorio y tablas dinámicas
