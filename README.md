@@ -181,9 +181,8 @@ Busco una posición como **Practicante de Análisis de Datos / Junior Data Analy
 ## Contacto
 
 **Email**: cesar.zarate@ejemplo.com  
-**LinkedIn**: [linkedin.com/in/cesar-zarate-pomaleque]([https://linkedin.com/in/tu-perfil](https://www.linkedin.com/in/cesar-zarate-02a40b328))  
-**GitHub**: [github.com/cesarzarate](https://github.com/tu-usuario)  
-**Portfolio Web**: [tu-sitio-web.com](https://tu-sitio.com) *(opcional)*
+**LinkedIn**: ([https://linkedin.com/in/tu-perfil](https://www.linkedin.com/in/cesar-zarate-02a40b328))  
+**GitHub**: [github.com/cesarzarate](https://github.com/tu-usuario)
 
 ---
 
