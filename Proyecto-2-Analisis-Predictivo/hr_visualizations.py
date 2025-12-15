@@ -239,19 +239,4 @@ print("    Guardado: 08_correlation_heatmap.png")
 plt.close()
 
 # =============================================================================
-# RESUMEN
-# =============================================================================
-
-print("\n" + "="*80)
-print(" VISUALIZACIONES COMPLETADAS")
-print("="*80)
-print("\nSe generaron 8 GRAFICOs profesionales en la carpeta 'outputs':")
-print("  1. Distribución de Deserción")
-print("  2. Deserción por Departamento")
-print("  3. Top 10 Roles con Mayor Deserción")
-print("  4. Salario vs Deserción")
-print("  5. Edad vs Deserción")
-print("  6. Distancia desde Casa vs Deserción")
-print("  7. Balance Vida-Trabajo vs Deserción")
-print("  8. Mapa de Calor de Correlaciones")
-print("="*80)
+print("okey")
