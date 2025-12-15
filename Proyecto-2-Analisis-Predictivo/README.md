@@ -1,23 +1,27 @@
 # Análisis Predictivo de Rotación de Empleados (HR Analytics)
 
 ## Objetivo del Proyecto
-Desarrollar un modelo de Machine Learning para predecir qué empleados tienen mayor riesgo de abandonar la empresa, identificando los factores clave que influyen en la rotación laboral (attrition) y proporcionando insights accionables para el departamento de Recursos Humanos.
+Desarrollar un sistema predictivo de Machine Learning para identificar empleados con alto riesgo de deserción laboral, permitiendo al departamento de Recursos Humanos implementar estrategias de retención proactivas y basadas en datos.
 
-![Preview del Proyecto](preview.png)
+![Dashboard Preview](dashboard-preview.png)
 
 ## Herramientas y Tecnologías Utilizadas
 
 ### Lenguajes y Librerías
 - **Python 3.13**
   - `pandas` - Manipulación y análisis de datos
-  - `numpy` - Operaciones numéricas
+  - `numpy` - Operaciones numéricas y arrays
   - `matplotlib` - Visualizaciones básicas
   - `seaborn` - Visualizaciones estadísticas avanzadas
   - `scikit-learn` - Machine Learning y evaluación de modelos
 
-### Entorno de Desarrollo
-- **VS Code** - Editor de código
-- **Entorno Virtual** (.venv) - Gestión de dependencias
+### **Herramientas de BI**
+- **Power BI Desktop** - Dashboard interactivo
+- **DAX** - Creación de medidas calculadas
+
+### **Entorno**
+- **VS Code** - Desarrollo
+- **Python Virtual Environment** (.venv) - Gestión de dependencias
 
 ## Dataset
 - **Fuente**: IBM HR Analytics Employee Attrition & Performance (Kaggle)
@@ -26,246 +30,300 @@ Desarrollar un modelo de Machine Learning para predecir qué empleados tienen ma
 - **Período**: Datos históricos de empleados
 - **Variable Objetivo**: Attrition (Yes/No)
 
-### Variables Clave Analizadas
-- Demográficas: Edad, Género, Estado Civil, Distancia desde Casa
-- Laborales: Departamento, Rol, Años en la Empresa, Salario Mensual
-- Satisfacción: Work-Life Balance, Satisfacción Laboral, Ambiente de Trabajo
-- Compensación: Salario Mensual, Incremento Salarial, Nivel de Stock Options
+### **Variables Clave**
+- **Demográficas**: Edad, Género, Estado Civil, Distancia desde Casa
+- **Laborales**: Departamento, Rol, Años en Empresa, Salario Mensual
+- **Satisfacción**: Balance Vida-Trabajo, Satisfacción Laboral, Ambiente
+- **Compensación**: Salario, Aumento Salarial, Opciones de Acciones
 
 ## Metodología del Proyecto
 
 ### **FASE 1: Análisis Exploratorio de Datos (EDA)**
-Exploración inicial para entender la distribución y calidad de los datos.
 
-**Hallazgos principales:**
-- No hay valores nulos - datos completos
-- 16.12% de tasa de attrition general (237 empleados)
-- Dataset balanceado demográficamente
+**Herramienta**: Python (Pandas, NumPy)
 
-**Análisis realizado:**
+**Hallazgos Clave:**
+- Dataset limpio: 0 valores nulos
+- Tasa de deserción general: **16.12%** (237 de 1,470 empleados)
+- Balance demográfico adecuado
+
+**Análisis Realizado:**
 ```python
-# Estadísticas descriptivas
-- Distribución de attrition por departamento, rol, género
-- Análisis de edad, salario y distancia vs attrition
-- Evaluación de work-life balance y satisfacción
+# Distribución por variables clave
+- Deserción por Departamento, Rol, Género
+- Análisis de Edad, Salario, Distancia vs Deserción
+- Evaluación de Balance Vida-Trabajo y Satisfacción
 ```
+
+**Script**: [`hr_analysis.py`](hr_analysis.py)
+
+---
 
 ### **FASE 2: Visualización de Datos**
-Creación de 8 gráficos profesionales para identificar patrones.
 
-**Visualizaciones generadas:**
-1. Distribución general de Attrition (barras + pastel)
-2. Tasa de Attrition por Departamento
-3. Top 10 Roles con Mayor Attrition
-4. Distribución de Salario por Attrition (boxplot)
-5. Distribución de Edad por Attrition (histograma)
-6. Distancia desde Casa vs Attrition (violin plot)
-7. Work-Life Balance vs Attrition
-8. Mapa de Calor de Correlaciones
+**Herramienta**: Python (Matplotlib, Seaborn)
+
+**8 Visualizaciones Profesionales Generadas:**
+
+1. **Distribución de Deserción** (Barras + Pastel)
+2. **Deserción por Departamento** (Barras apiladas)
+3. **Top 10 Roles con Mayor Deserción** (Barras horizontales)
+4. **Salario vs Deserción** (Boxplot)
+5. **Edad vs Deserción** (Histograma superpuesto)
+6. **Distancia desde Casa** (Violin plot)
+7. **Balance Vida-Trabajo** (Barras comparativas)
+8. **Mapa de Calor de Correlaciones** (Heatmap)
+
+**Formato**: PNG de alta resolución (300 DPI)
+
+**Script**: [`hr_visualizations.py`](hr_visualizations.py)
+
+---
 
 ### **FASE 3: Machine Learning - Modelo Predictivo**
-Implementación de Random Forest Classifier para predecir attrition.
 
-**Preparación de datos:**
-```python
-# Encoding de variables categóricas
-- 7 variables categóricas convertidas a numéricas con LabelEncoder
-- División: 80% entrenamiento, 20% prueba (stratified)
-- 30 features finales para el modelo
-```
+**Algoritmo**: Random Forest Classifier
 
-**Configuración del modelo:**
+#### **Configuración del Modelo**
 ```python
 RandomForestClassifier(
-    n_estimators=100,
-    max_depth=10,
-    min_samples_split=10,
+    n_estimators=100,      # 100 árboles de decisión
+    max_depth=10,          # Profundidad máxima
+    min_samples_split=10,  # Mínimo para dividir
     random_state=42
 )
 ```
 
-## Resultados del Modelo
+#### **Preparación de Datos**
+- **Encoding**: 7 variables categóricas convertidas a numéricas (LabelEncoder)
+- **División**: 80% entrenamiento / 20% prueba (stratified)
+- **Features**: 30 variables finales para el modelo
 
-### Métricas de Desempeño
-------------------------------------------------------------------------------------
-|           Métrica            |  Valor |             Interpretación               |
-|------------------------------|--------|------------------------------------------|
-| **Accuracy**                 | 83.67% | Muy bueno para clasificación binaria     |
-| **ROC-AUC**                  | 0.82   | Excelente capacidad discriminativa       |
-| **Precisión (No Attrition)** | 0.85   | Alta confiabilidad                       |
-| **Recall (No Attrition)**    | 0.97   | Detecta muy bien empleados que se quedan |
-| **F1-Score**                 | 0.84   | Balance general sólido                   |
-------------------------------------------------------------------------------------
+#### **Métricas de Desempeño**
 
-### Matriz de Confusión
+| Métrica | Valor | Interpretación |
+|---------|-------|----------------|
+| **Accuracy** | 83.67% | Muy buena precisión general |
+| **ROC-AUC** | 0.79 | Excelente capacidad discriminativa |
+| **Precision (No Deserción)** | 0.85 | Alta confiabilidad |
+| **Recall (No Deserción)** | 0.97 | Detecta muy bien empleados que se quedan |
+| **F1-Score** | 0.84 | Balance sólido |
+
+#### **Matriz de Confusión**
 ```
                 Predicho No    Predicho Yes
-Real No            240              7
-Real Yes            41              6
-
-Clasificaciones correctas: 246/294 (83.67%)
+Real No            238              9
+Real Yes            42              5
 ```
 
-### Top 10 Variables Más Importantes
+**Interpretación:**
+- **238 Verdaderos Negativos** - Predijo correctamente que no se irían
+- **9 Falsos Positivos** - Predijo que se irían pero se quedaron
+- **42 Falsos Negativos** - Predijo que no se irían pero se fueron
+- **5 Verdaderos Positivos** - Predijo correctamente que se irían
 
-El modelo identificó los factores que más influyen en la predicción de attrition:
----------------------------------------------------------------------------------
-| # |     Variable   | Importancia |                 Insight                    |
-|---|-------------------|-------|-----------------------------------------------|
-| 1 | MonthlyIncome     | 8.80% | Factor #1: Salarios bajos aumentan riesgo     |
-| 2 | TotalWorkingYears | 8.16% | Empleados con menos experiencia se van más    |
-| 3 | Age               | 7.64% | Empleados jóvenes tienen mayor rotación       |
-| 4 | OverTime          | 5.42% | Horas extras incrementan probabilidad de irse |
-| 5 | DailyRate         | 4.99% | Compensación diaria afecta retención          |  
-| 6 | DistanceFromHome  | 4.73% | Vivir lejos del trabajo aumenta riesgo        |
-| 7 | MonthlyRate       | 4.62% | Estructura salarial mensual importa           |
-| 8 | YearsAtCompany    | 4.49% | Menos antigüedad = mayor riesgo               |
-| 9 | HourlyRate        | 4.04% | Tasa horaria influye en decisión              |
-| 10 | JobRole          | 3.63% | Ciertos roles tienen más rotación             |
----------------------------------------------------------------------------------
-## Insights Clave y Hallazgos
+**Script**: [`hr_machine_learning.py`](hr_machine_learning.py)
 
-### Factores de Alto Riesgo
+---
 
-#### 1. **Departamento SALES - CRÍTICO**
-- **Attrition: 20.63%** (vs 13.84% en R&D)
-- Sales tiene 50% más rotación que otros departamentos
+### **FASE 4: Dashboard Interactivo en Power BI**
 
-#### 2. **Sales Representative - CRISIS**
-- **Attrition: 39.76%** ← 4 de cada 10 se van
-- El rol con mayor rotación de toda la empresa
-- Requiere intervención inmediata
+**Componentes del Dashboard:**
 
-#### 3. **Perfil de Riesgo: "Empleado Joven y Mal Pagado"**
-- **Edad promedio de quienes se van**: 33.6 años (vs 37.6 que se quedan)
-- **Salario promedio de quienes se van**: $4,787 (vs $6,833 que se quedan)
-- **Diferencia salarial**: -30% menos que empleados retenidos
+#### **1. KPIs Principales**
+- Total Empleados: **1,470**
+- Tasa Deserción: **16.12%**
+- Salario Promedio: **$6,500**
+- Empleados Alto Riesgo: **91** (6.19%)
 
-#### 4. **Distancia desde Casa**
-- Quienes se van viven **10.6 km** del trabajo (vs 8.9 km)
-- 1.7 km adicionales correlacionan con mayor attrition
+#### **2. Filtros Interactivos**
+- Departamento
+- Rol del Puesto
+- Grupo de Edad
+- Nivel de Riesgo ML
 
-#### 5. **Work-Life Balance MALO**
-- Empleados con balance "Bad" (nivel 1): **31.25% de attrition**
-- Empleados con balance "Better/Best": **14-17% de attrition**
-- **Doble probabilidad** de irse con mal balance
+#### **3. Visualizaciones Clave**
+- Deserción por Departamento
+- Matriz: Predicción ML vs Realidad
+- Scatter Plot: Edad vs Salario vs Deserción
+- Top 10 Variables Más Importantes
+- Distribución de Riesgo (Donut Chart)
+- Tabla: Empleados de Alto Riesgo (con IDs y probabilidades)
 
-### Factores de Protección
+**Script de Preparación**: [`prepare_powerbi_data.py`](prepare_powerbi_data.py)
 
-- **Edad >35 años** - Más estables
-- **Salario >$6,000** - Mayor retención
-- **Distancia <7 km** - Facilita permanencia
-- **Roles gerenciales** - Solo 4.9% de attrition
-- **Work-Life Balance nivel 3-4** - Empleados satisfechos
+---
+
+## Top 10 Variables Más Importantes (Feature Importance)
+
+El modelo identificó los factores que más influyen en la deserción:
+
+| # | Variable | Importancia | Insight Clave |
+|---|----------|-------------|---------------|
+| 1 | Porcentaje de aumento salarial | 10.23% | Los aumentos bajos/nulos aumentan deserción |
+| 2 | Ingresos mensuales | 8.18% | Salarios bajos correlacionan con mayor deserción |
+| 3 | Edad | 6.24% | Empleados jóvenes (<30) tienen mayor rotación |
+| 4 | Tiempos de capacitación | 5.05% | Poca capacitación aumenta probabilidad de salida |
+| 5 | Distancia desde casa | 4.87% | Vivir lejos incrementa el riesgo |
+| 6 | Rol del puesto | 4.86% | Ciertos roles tienen más rotación |
+| 7 | Tarifa diaria | 4.62% | Estructura de compensación afecta retención |
+| 8 | Años en la empresa | 4.34% | Empleados nuevos tienen mayor riesgo |
+| 9 | Tarifa por hora | 4.15% | Compensación horaria influye en decisión |
+| 10 | Tarifa mensual | 4.15% | Estructura salarial mensual importa |
+
+**Conclusión**: Los factores salariales (aumentos + salario base) representan **~18.5%** de la importancia total del modelo.
+
+---
+
+## Insights y Hallazgos Clave
+
+### **HALLAZGOS CRÍTICOS**
+
+#### **1. Crisis en Sales Representatives Jóvenes**
+- **Tasa de deserción: 39.76%** (4 de cada 10 se van) ← ALERTA MÁXIMA
+- Perfil de riesgo: 18-19 años, salarios $1,600-$2,800
+- **Ejemplo del dashboard**: Employee ID 959 (19 años, Sales Rep, $2,121) → **89.60%** de probabilidad de irse
+
+**Recomendación Urgente:**
+```
+Aumento salarial inmediato a banda competitiva ($3,500+)
+Plan de carrera claro con milestones en 6-12 meses
+Mentoría con Sales Executives senior
+Programa de retención específico para este rol
+```
+
+---
+
+#### **2. Departamento de Sales - Mayor Rotación**
+- **Tasa de deserción: 20.63%** vs 13.84% en R&D
+- 50% más rotación que otros departamentos
+- Representa el 38.8% de todas las deserciones
+
+**Recomendación:**
+```
+Revisión de compensación variable (comisiones)
+Análisis de carga de trabajo y metas
+Evaluación de liderazgo en el departamento
+Programa de reconocimiento y bonos
+```
+
+---
+
+#### **3. Perfil de Empleado en Riesgo**
+**Características del empleado típico que se va:**
+- **Edad promedio**: 33.6 años (vs 37.6 que se quedan)
+- **Salario promedio**: $4,787 (vs $6,833 que se quedan) ← **30% menos**
+- **Distancia**: 10.6 km (vs 8.9 km que se quedan)
+- **Aumentos**: Menores al promedio del mercado
+- **Balance Vida-Trabajo**: Nivel 1 "Malo" → **31% de deserción** (vs 14-17% en niveles superiores)
+
+---
+
+#### **4. El Factor Salarial es Determinante**
+- **Combinado** (aumentos + salario base): ~18.5% de importancia en el modelo
+- Empleados sin aumentos significativos tienen **2x probabilidad** de irse
+- Brecha salarial de **$2,046** entre los que se van vs los que se quedan
+
+---
+
+### **FACTORES DE PROTECCIÓN**
+
+**Empleados con BAJA probabilidad de deserción:**
+- Edad >35 años - Más estables
+- Salario >$6,000 - Mayor retención
+- Distancia <7 km - Facilita permanencia
+- Roles gerenciales - Solo 4.9% de deserción
+- Balance Vida-Trabajo nivel 3-4 - Empleados satisfechos
+- Alta capacitación - Se sienten valorados
+
+---
 
 ## Recomendaciones Estratégicas para RRHH
 
-### **PRIORIDAD ALTA - Acción Inmediata**
+### **PRIORIDAD ALTA - Acción Inmediata (0-30 días)**
 
-1. **Intervención en Sales Representatives**
-   - Revisión salarial urgente (actualmente $2,046 por debajo del promedio)
-   - Programa de retención específico para este rol
-   - Análisis de carga laboral y horas extras
+#### **1. Intervención en Sales Representatives**
+```
+Acción: Revisión salarial urgente + Plan de retención
+Target: 91 empleados identificados como Alto Riesgo
+Budget estimado: $180K-$250K anuales
+ROI: Evitar costos de reemplazo ($50K-$75K por empleado)
+```
 
-2. **Programa de Retención para Empleados Jóvenes (<35 años)**
-   - Plan de carrera claro con milestones
-   - Mentoría con empleados senior
-   - Incremento salarial competitivo
+**Pasos concretos:**
+- Entrevistas 1-a-1 con los 91 empleados de alto riesgo
+- Ofrecer aumento inmediato del 15-25%
+- Bonos de retención ($2K-$5K)
+- Plan de carrera personalizado a 6 meses
 
-3. **Política de Work-Life Balance**
-   - Reducir horas extras obligatorias
-   - Implementar trabajo híbrido/remoto
-   - Revisar empleados con nivel 1-2 de balance
+---
 
-### **PRIORIDAD MEDIA - Corto Plazo (3-6 meses)**
+#### **2. Programa de Retención para Jóvenes (<30 años)**
+```
+Target: 400-500 empleados en este segmento
+Inversión: Plan de carrera + Mentoría + Capacitación
+Objetivo: Reducir deserción de 20% a 12% en 12 meses
+```
 
-4. **Revisión Salarial por Departamento**
-   - Benchmark salarial vs mercado
-   - Ajuste para roles con alta rotación
-   - Transparencia en bandas salariales
+**Componentes:**
+- Mentoría formal con empleados senior
+- Capacitación técnica y soft skills (40 horas/año)
+- Milestones claros de promoción
+- Ajuste salarial competitivo
 
-5. **Opciones de Trabajo Remoto/Híbrido**
-   - Prioridad para empleados que viven >10 km
-   - Reducir impacto de distancia en retención
-   - Política flexible por departamento
+---
 
-6. **Dashboard Predictivo de Attrition**
-   - Implementar modelo en producción
-   - Alertas mensuales de empleados en riesgo
-   - Seguimiento de efectividad de intervenciones
+#### **3. Política de Work-Life Balance**
+```
+Problema: Empleados con nivel 1 "Malo" tienen 31% de deserción
+Target: 80 empleados en nivel 1
+Objetivo: Elevar a nivel 2-3 en 90 días
+```
+
+**Acciones:**
+- Reducir horas extras obligatorias
+- Implementar trabajo híbrido (2-3 días remotos)
+- Flexibilidad de horarios
+- Política de "no emails después de 7pm"
+
+---
+
+### **PRIORIDAD MEDIA - Corto Plazo (1-3 meses)**
+
+#### **4. Revisión Salarial por Departamento**
+- Benchmark salarial vs mercado (Glassdoor, LinkedIn Salary)
+- Ajuste para roles con alta rotación
+- Transparencia en bandas salariales
+- Incremento mínimo anual del 8-12%
+
+#### **5. Trabajo Remoto/Híbrido para Empleados Lejanos**
+- Prioridad para empleados que viven >10 km
+- Política flexible por departamento
+- Subsidio de transporte para presenciales
+
+#### **6. Dashboard Predictivo de Deserción (automatizado)**
+- Implementar modelo en producción
+- Alertas mensuales automáticas de empleados en riesgo
+- KPIs de retención en dashboards gerenciales
+- Seguimiento de efectividad de intervenciones
+
+---
 
 ### **PRIORIDAD BAJA - Largo Plazo (6-12 meses)**
 
-7. **Cultura Organizacional**
-   - Encuestas de satisfacción trimestrales
-   - Programas de reconocimiento
-   - Mejora del ambiente laboral (según EnvironmentSatisfaction)
+#### **7. Cultura Organizacional**
+- Encuestas de satisfacción trimestrales
+- Programas de reconocimiento peer-to-peer
+- Mejora del ambiente laboral (NPS Interno)
 
-8. **Desarrollo Profesional**
-   - Capacitaciones y certificaciones
-   - Rotación interna de roles
-   - Planes de sucesión claros
+#### **8. Desarrollo Profesional**
+- Presupuesto de capacitación por empleado ($1K-$2K/año)
+- Certificaciones pagadas por la empresa
+- Rotación interna de roles
+- Planes de sucesión claros
 
-## Estructura del Proyecto
-```
-Proyecto-2-HR-Analytics/
-│
-├── data/
-│   └── HR-Employee-Attrition.xlsx          # Dataset original
-│
-├── outputs/
-│   ├── 01_attrition_distribution.png       # Gráfico: Distribución general
-│   ├── 02_attrition_by_department.png      # Gráfico: Por departamento
-│   ├── 03_top10_roles_attrition.png        # Gráfico: Top roles críticos
-│   ├── 04_salary_vs_attrition.png          # Gráfico: Salario vs attrition
-│   ├── 05_age_distribution.png             # Gráfico: Edad vs attrition
-│   ├── 06_distance_vs_attrition.png        # Gráfico: Distancia vs attrition
-│   ├── 07_worklifebalance_attrition.png    # Gráfico: WLB vs attrition
-│   ├── 08_correlation_heatmap.png          # Gráfico: Mapa de correlaciones
-│   ├── 09_confusion_matrix.png             # Gráfico: Matriz confusión ML
-│   ├── 10_feature_importance.png           # Gráfico: Variables importantes
-│   ├── 11_roc_curve.png                    # Gráfico: Curva ROC
-│   ├── feature_importance.csv              # Ranking completo de variables
-│   └── predictions.csv                     # Predicciones del modelo
-│
-├── hr_analysis.py                          # Script: Análisis exploratorio
-├── hr_visualizations.py                    # Script: Generación de gráficos
-├── hr_machine_learning.py                  # Script: Modelo predictivo
-│
-└── README.md                               # Este archivo
-```
+---
 
-## Cómo Ejecutar el Proyecto
 
-### Requisitos Previos
-```bash
-Python 3.8+
-pip install pandas numpy matplotlib seaborn scikit-learn openpyxl
-```
 
-### Ejecución
-```bash
-# 1. Análisis exploratorio
-python hr_analysis.py
 
-# 2. Generar visualizaciones
-python hr_visualizations.py
-
-# 3. Entrenar modelo ML
-python hr_machine_learning.py
-```
-
-## Habilidades Demostradas
-
-- **Python Avanzado**: Pandas, NumPy, Matplotlib, Seaborn
-- **Análisis Exploratorio de Datos (EDA)**: Identificación de patrones
-- **Visualización de Datos**: 11 gráficos profesionales en HD
-- **Machine Learning**: Random Forest Classifier, Feature Engineering
-- **Evaluación de Modelos**: Métricas, Matriz de Confusión, ROC-AUC
-- **Feature Importance**: Identificación de variables críticas
-- **Storytelling con Datos**: Traducción de análisis a insights accionables
-- **Pensamiento Estratégico**: Recomendaciones basadas en datos
-
-*Proyecto desarrollado como parte de mi portafolio profesional de Análisis de Datos y Machine Learning*
-
-**Última actualización**: Diciembre 2025
