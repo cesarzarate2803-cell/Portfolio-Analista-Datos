@@ -308,22 +308,26 @@ Objetivo: Elevar a nivel 2-3 en 90 días
 - Seguimiento de efectividad de intervenciones
 
 ---
+## Habilidades Demostradas
 
-### **PRIORIDAD BAJA - Largo Plazo (6-12 meses)**
+### **Técnicas**
+- **Python Avanzado**: Pandas, NumPy, Matplotlib, Seaborn
+- **Machine Learning**: Random Forest, Feature Engineering, Model Evaluation
+- **Data Cleaning**: Manejo de valores nulos, encoding categórico
+- **Visualización de Datos**: 11 gráficos profesionales en HD
+- **Power BI**: Dashboards interactivos, DAX, Storytelling
+- **Feature Importance Analysis**: Identificación de variables críticas
 
-#### **7. Cultura Organizacional**
-- Encuestas de satisfacción trimestrales
-- Programas de reconocimiento peer-to-peer
-- Mejora del ambiente laboral (NPS Interno)
-
-#### **8. Desarrollo Profesional**
-- Presupuesto de capacitación por empleado ($1K-$2K/año)
-- Certificaciones pagadas por la empresa
-- Rotación interna de roles
-- Planes de sucesión claros
+### **De Negocio**
+- **Pensamiento Estratégico**: Recomendaciones accionables para RRHH
+- **Análisis de ROI**: Justificación de inversiones en retención
+- **Storytelling con Datos**: Traducción de análisis técnico a insights ejecutivos
+- **Priorización**: Clasificación de acciones por urgencia e impacto
 
 ---
 
+*"Los datos no solo cuentan historias del pasado; predicen el futuro. Este proyecto transforma 1,470 historias de empleados en un sistema predictivo que salva carreras y ahorra millones."*
 
+**Última actualización**: Diciembre 2025
 
 
