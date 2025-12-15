@@ -17,6 +17,25 @@ Analizar el desempeño comercial de una cadena de tiendas retail para identifica
 - Período: 2011 - 2014
 - Alcance: Ventas globales en múltiples regiones y categorías de productos
 
+## Preguntas de Negocio Respondidas
+
+1. ¿Qué categoría de productos genera más ventas y cuál tiene mejor margen?
+   - Technology lidera en ventas ($4.7M) con 13.99% de margen
+   - Furniture tiene el margen más bajo (6.98%) a pesar de generar $4.1M en ventas
+
+2. ¿Qué región vende más pero genera menos ganancia?
+   - Southeast Asia presenta ventas de $884K pero solo 2.02% de margen
+   - Indica problemas de costos operativos o descuentos excesivos
+
+3. ¿Qué productos deberíamos dejar de vender?
+   - Identificados 10+ productos con pérdidas consistentes
+   - Top pérdida: Cubify CubeX 3D Printer (-$8,879.97)
+   - Categoría Furniture domina la lista de productos no rentables
+
+4. ¿Cuál es la tendencia de ventas y hay estacionalidad?
+   - Crecimiento sostenido: de $2.3M (2011) a $4.3M (2014)
+   - Picos estacionales en Q4 (Noviembre-Diciembre) y Septiembre
+
 ## Insights Clave
 
 ### Hallazgos Críticos:
@@ -60,21 +79,4 @@ Analizar el desempeño comercial de una cadena de tiendas retail para identifica
 - Storytelling con datos
 - Identificación de insights de negocio
 
-## Preguntas de Negocio Respondidas
-
-1. ¿Qué categoría de productos genera más ventas y cuál tiene mejor margen?
-   - Technology lidera en ventas ($4.7M) con 13.99% de margen
-   - Furniture tiene el margen más bajo (6.98%) a pesar de generar $4.1M en ventas
-
-2. ¿Qué región vende más pero genera menos ganancia?
-   - Southeast Asia presenta ventas de $884K pero solo 2.02% de margen
-   - Indica problemas de costos operativos o descuentos excesivos
-
-3. ¿Qué productos deberíamos dejar de vender?
-   - Identificados 10+ productos con pérdidas consistentes
-   - Top pérdida: Cubify CubeX 3D Printer (-$8,879.97)
-   - Categoría Furniture domina la lista de productos no rentables
-
-4. ¿Cuál es la tendencia de ventas y hay estacionalidad?
-   - Crecimiento sostenido: de $2.3M (2011) a $4.3M (2014)
-   - Picos estacionales en Q4 (Noviembre-Diciembre) y Septiembre
+*Proyecto desarrollado como parte de mi portafolio profesional de Análisis de Datos*
