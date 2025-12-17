@@ -134,7 +134,7 @@ Python (Pandas, NumPy, Matplotlib, Seaborn), Machine Learning (Random Forest), F
 
 ---
 
-### 3. [Sistema de Análisis de Datos - Cadena Veterinaria](./Proyecto-3-Sistema-de-Análisis-de-Datos - Cadena-Veterinaria)
+### 3. [Sistema-de-Análisis-de-Datos - Cadena-Veterinaria](./Proyecto-3-Sistema-de-Análisis-de-Datos - Cadena-Veterinaria)
 
 **Herramientas:** PostgreSQL, Python, Tableau Desktop, SQL Avanzado, ETL
 **Dataset:** 150,000+ registros transaccionales de múltiples sedes
