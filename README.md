@@ -106,7 +106,7 @@ Data Cleaning, Análisis Exploratorio, Tablas Dinámicas, DAX, Power Query, Visu
 
 ---
 
-### 2. [Análisis Predictivo de Rotación de Empleados (HR Analytics)](./Proyecto-2-HR-Analytics)
+### 2. [Análisis Predictivo de Rotación de Empleados (HR Analytics)](./Proyecto-2-Analisis-Predictivo)
 
 ![Dashboard HR](Proyecto-2-Analisis-Predictivo/dashboard-preview.png)
 
