@@ -263,7 +263,8 @@ PostgreSQL, SQL Avanzado (CTEs, Window Functions, Joins complejos), Python (Pand
 
 Busco una posición como **Practicante de Análisis de Datos / Junior Data Analyst** donde pueda:
 
-- Aplicar mis conocimientos en **Python, SQL, Power BI y Machine Learning**
+- Aplicar mis conocimientos en **SQL avanzado, Python, Tableau y arquitectura de datos**
+- Diseñar y desarrollar **Data Warehouses y pipelines ETL automatizados**
 - Transformar datos en **insights accionables** mediante análisis exploratorio y modelos predictivos
 - Contribuir a la **toma de decisiones estratégicas** basadas en datos
 - Desarrollar soluciones de **BI** que optimicen procesos y generen valor medible
@@ -281,28 +282,6 @@ Busco una posición como **Practicante de Análisis de Datos / Junior Data Analy
 
 ---
 
-## Estadísticas de GitHub
-
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=tu-usuario&show_icons=true&theme=tokyonight)
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=tu-usuario&layout=compact&theme=tokyonight)
-
----
-
-## Experiencia Resumida
-
-| Proyecto | Herramientas | Skills Clave |
-|----------|--------------|--------------|
-| Dashboard Ventas | Excel, Power BI, DAX | Data Cleaning, EDA, BI, Visualización |
-| HR Analytics ML | Python, Scikit-learn, Power BI | Machine Learning, Feature Engineering, Storytelling |
-| PostgreSQL (próximo) | PostgreSQL, SQL, Python | Databases, SQL Avanzado, ETL |
-
-**Total de proyectos**: 2 completados + 1 en desarrollo  
-**Líneas de código Python**: ~1,500+  
-**Visualizaciones creadas**: 16+ gráficos profesionales  
-**Dashboards interactivos**: 2 completos
-
----
-
 ## Destacados del Portfolio
 
 ### **Proyecto más técnico**: HR Analytics
@@ -315,10 +294,13 @@ Busco una posición como **Practicante de Análisis de Datos / Junior Data Analy
 - Recomendaciones que podrían mejorar rentabilidad 8-15%
 - Dashboard accionable para decisiones diarias
 
-### **Próximo desafío**: PostgreSQL Database Analysis
-- Integración de bases de datos relacionales
-- Queries SQL avanzadas
-- ETL automatizado
+## **Proyecto más técnico:** Sistema de Análisis Veterinaria 
+- Arquitectura completa de datos end-to-end
+- Data Warehouse con modelo dimensional
+- Pipeline ETL con SCD Type 2
+- 150,000+ registros procesados
+- SQL Avanzado: CTEs, Window Functions
+- Queries optimizadas (+40% performance)
 
 ---
 
@@ -343,20 +325,13 @@ Estoy abierto a:
 - Desarrollo de dashboards
 - Colaboraciones en Machine Learning
 - Consultoría de BI
-
+- Consultoría de arquitectura de datos
 ---
 
-*"Los datos no solo cuentan historias del pasado; nos permiten predecir el futuro y tomar mejores decisiones hoy. Mi misión es transformar números en narrativas accionables."*
+*"Los datos no solo cuentan historias del pasado; nos permiten predecir el futuro y diseñar sistemas que escalen. Mi misión es transformar números en arquitecturas robustas y narrativas accionables que impulsen decisiones estratégicas.""*
 
 ---
 
 **Última actualización**: Diciembre 2025 
-**Versión**: 2.0 - Portfolio con Machine Learning
+**Versión**: 3.0 - Portfolio con Arquitectura de Datos & Data Warehousing
 
----
-
-## Licencia
-
-Este portfolio y sus proyectos son de código abierto para fines educativos. Si usas algún código o metodología, por favor da el crédito correspondiente.
-
-[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
