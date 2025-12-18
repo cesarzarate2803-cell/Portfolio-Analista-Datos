@@ -1,15 +1,15 @@
 # Portfolio de Análisis de Datos
 
-¡Bienvenido a mi portafolio! Soy **Cesar Jesus Zarate Pomaleque**, estudiante de 8vo ciclo de Ingeniería de Sistemas con especialización en **Análisis de Datos y Machine Learning**. Este repositorio contiene proyectos end-to-end que demuestran mis habilidades en limpieza, análisis, visualización de datos y modelos predictivos aplicados a casos de negocio reales.
+¡Bienvenido a mi portafolio! Soy **Cesar Jesus Zarate Pomaleque**, estudiante de 8vo ciclo de Ingeniería de Sistemas con especialización en **Análisis de Datos y Machine Learning**. Este repositorio contiene proyectos end-to-end que demuestran mis habilidades en arquitectura de datos, ETL, análisis avanzado, visualización y modelos predictivos aplicados a casos de negocio reales.
 
 ---
 
 ## Sobre Mí
 
-Estudiante de Ingeniería de Sistemas con sólida formación en análisis de datos y experiencia práctica en herramientas de Business Intelligence y Machine Learning. Cuento con certificaciones profesionales en Google Data Analytics, Power BI y Excel, además de experiencia aplicada en proyectos de análisis exploratorio, visualización avanzada y desarrollo de modelos predictivos.
+Estudiante de Ingeniería de Sistemas con sólida formación en análisis de datos, arquitectura de información y Business Intelligence. Cuento con certificaciones profesionales en Google Data Analytics, Power BI y Excel, además de experiencia práctica en diseño de Data Warehouses, pipelines ETL automatizados, SQL avanzado y Machine Learning.
 
-Busco mi primera oportunidad como **Practicante de Análisis de Datos / Data Analyst Junior** para aplicar mis habilidades técnicas en Python, SQL, Power BI y Machine Learning, aportando valor mediante insights accionables y soluciones basadas en datos que impulsen la toma de decisiones estratégicas.
-
+He desarrollado proyectos completos procesando 150,000+ registros, diseñando modelos dimensionales, automatizando procesos ETL con Python y creando dashboards ejecutivos en Tableau y Power BI.
+Busco mi primera oportunidad como **Practicante de Análisis de Datos / Data Analyst Junior** para aplicar mis habilidades técnicas en SQL avanzado, Python, Tableau, arquitectura de datos y Machine Learning, aportando valor mediante insights accionables y soluciones basadas en datos que impulsen la toma de decisiones estratégicas.
 ---
 
 ## Stack Técnico
@@ -23,17 +23,26 @@ Busco mi primera oportunidad como **Practicante de Análisis de Datos / Data Ana
 - `numpy` - Operaciones numéricas y arrays
 - `matplotlib` & `seaborn` - Visualización avanzada
 - `scikit-learn` - Machine Learning (Random Forest, Feature Engineering, Model Evaluation)
+- `psycopg2` - Conector PostgreSQL para ETL
+- `faker` - Generación de datos sintéticos realistas
 
 **SQL**
-- Consultas avanzadas (Joins, Subconsultas, CTEs, Window Functions)
-- MySQL, PostgreSQL
-- Diseño de queries optimizadas
+- `SQL Avanzado`- CTEs (Common Table Expressions), Window Functions, Subconsultas correlacionadas
+- `Optimización` - Índices estratégicos, análisis de planes de ejecución, queries optimizadas
+- `Bases de datos` - PostgreSQL, MySQL, Oracle, SQL Server
+- `Diseño` - Normalización, modelado relacional, integridad referencial
 
 ---
 
 ### **Business Intelligence & Visualización**
 ![Power BI](https://img.shields.io/badge/Power_BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)
 ![Excel](https://img.shields.io/badge/Excel-217346?style=for-the-badge&logo=microsoft-excel&logoColor=white)
+
+**Tableau Desktop**
+- Dashboards interactivos profesionales
+- Live Connection a bases de datos
+- Parámetros dinámicos y filtros interactivos
+- Cálculos de tabla (Table Calculations)
 
 **Microsoft Power BI**
 - Creación de dashboards interactivos profesionales
@@ -46,6 +55,29 @@ Busco mi primera oportunidad como **Practicante de Análisis de Datos / Data Ana
 - Funciones avanzadas (BUSCARV, SI.ERROR, INDICE/COINCIDIR)
 - Análisis de datos con fórmulas matriciales
 - Limpieza y transformación de datos
+
+---
+### **Arquitectura de Datos & Data Warehousing**
+
+**Modelado Dimensional**
+- Diseño de esquema estrella (Star Schema) - Metodología Kimball
+- Identificación de hechos y dimensiones
+- Dimensiones conformadas y jerarquías
+- Slowly Changing Dimensions (SCD Type 1 y Type 2)
+- Tablas de hechos con granos correctos
+
+**Data Warehouse**
+- Diseño e implementación completa OLTP → Data Warehouse
+- Separación de capas: Operacional, Analítica, Presentación
+- Vistas materializadas y pre-agregaciones
+- Optimización para queries analíticas
+
+**ETL/ELT**
+- Pipeline ETL automatizado con Python
+- Carga incremental y manejo de deltas
+- Logging y manejo de errores
+- Validación de calidad de datos
+- Generación masiva de datos (150K+ registros)
 
 ---
 
@@ -62,21 +94,25 @@ Busco mi primera oportunidad como **Practicante de Análisis de Datos / Data Ana
 ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
 ![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
 
-- **Visual Studio Code**: Desarrollo de scripts Python
-- **Git/GitHub**: Control de versiones y colaboración
-- **Python Virtual Environments**: Gestión de dependencias
-- **Jupyter Notebooks**: Análisis exploratorio interactivo
+- **Visual Studio Code** - Desarrollo de scripts Python
+- **Git/GitHub** - Control de versiones y colaboración
+- **Python Virtual Environments** - Gestión de dependencias
+- **PostgreSQL** - Desarrollo de scripts de sql
+- **DBeaver** - Cliente SQL universal para múltiples bases de datos
+- **pgAdmin** - Administración de PostgreSQL
 
 ---
 
 ### **Metodologías y Conceptos**
-- **ETL/ELT**: Extracción, transformación y carga de datos
-- **Data Cleaning**: Manejo de valores nulos, outliers, duplicados
-- **EDA**: Análisis exploratorio de datos
-- **Data Modeling**: Diseño de modelos relacionales
-- **Statistical Analysis**: Correlaciones, distribuciones, pruebas de hipótesis
+- **ETL/ELT** - Extracción, transformación y carga de datos
+- **Data Cleaning** - Manejo de valores nulos, outliers, duplicados
+- **EDA** - Análisis exploratorio de datos
+- **Data Modeling** - Diseño de modelos relacionales
+- **Statistical Analysis** - Correlaciones, distribuciones, pruebas de hipótesis
 - **Data Storytelling**: Comunicación efectiva de insights
-
+- **Arquitectura de Datos** - Diseño de sistemas de análisis end-to-end
+- **Performance Tuning** - Optimización de queries y estructuras de datos
+- **Data Quality** - Validación, integridad y consistencia de datos
 ---
 
 ## Proyectos
@@ -197,6 +233,8 @@ PostgreSQL, SQL Avanzado (CTEs, Window Functions, Joins complejos), Python (Pand
 - SQL: Diseño de modelo dimensional, vistas optimizadas, índices estratégicos
 - Tableau: Conexión directa (Live), parámetros dinámicos, filtros interactivos
 - Git: Control de versiones con 10 archivos documentados
+
+**[Ver proyecto completo →](./Proyecto-3)**
 
 ---
 
