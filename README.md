@@ -7,9 +7,8 @@
 ## Sobre Mí
 
 Estudiante de Ingeniería de Sistemas con sólida formación en análisis de datos, arquitectura de información y Business Intelligence. Cuento con certificaciones profesionales en Google Data Analytics, Power BI y Excel, además de experiencia práctica en diseño de Data Warehouses, pipelines ETL automatizados, SQL avanzado y Machine Learning.
+He desarrollado proyectos completos procesando 150,000+ registros, diseñando modelos dimensionales, automatizando procesos ETL con Python y creando dashboards ejecutivos en Tableau y Power BI.Busco mi primera oportunidad como **Practicante de Análisis de Datos / Data Analyst Junior** para aplicar mis habilidads técnicas en SQL avanzado, Python, Tableau, arquitectura de datos y Machine Learning, aportando valor mediante insights accionables y soluciones basadas en datos que impulsen la toma de decisiones estratégicas.
 
-He desarrollado proyectos completos procesando 150,000+ registros, diseñando modelos dimensionales, automatizando procesos ETL con Python y creando dashboards ejecutivos en Tableau y Power BI.
-Busco mi primera oportunidad como **Practicante de Análisis de Datos / Data Analyst Junior** para aplicar mis habilidades técnicas en SQL avanzado, Python, Tableau, arquitectura de datos y Machine Learning, aportando valor mediante insights accionables y soluciones basadas en datos que impulsen la toma de decisiones estratégicas.
 ---
 
 ## Stack Técnico
