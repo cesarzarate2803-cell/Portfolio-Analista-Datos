@@ -1,7 +1,5 @@
 # Portfolio de Análisis de Datos
 
-![Banner](banner.png)
-
 ¡Bienvenido a mi portafolio! Soy **Cesar Jesus Zarate Pomaleque**, estudiante de 8vo ciclo de Ingeniería de Sistemas con especialización en **Análisis de Datos y Machine Learning**. Este repositorio contiene proyectos end-to-end que demuestran mis habilidades en limpieza, análisis, visualización de datos y modelos predictivos aplicados a casos de negocio reales.
 
 ---
