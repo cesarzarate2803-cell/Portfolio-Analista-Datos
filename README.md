@@ -14,16 +14,11 @@ Busco mi primera oportunidad como **Practicante de Análisis de Datos / Data Ana
 
 ## Stack Técnico
 
-### **Lenguajes de Programación**
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![SQL](https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=postgresql&logoColor=white)
-
 ### **Lenguajes de Programación y Librerías**
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 ![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white)
 ![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white)
 ![Scikit-Learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white)
-
 
 **Python**
 - `pandas` - Manipulación y análisis de datos
@@ -32,6 +27,11 @@ Busco mi primera oportunidad como **Practicante de Análisis de Datos / Data Ana
 - `scikit-learn` - Machine Learning (Random Forest, Feature Engineering, Model Evaluation)
 - `psycopg2` - Conector PostgreSQL para ETL
 - `faker` - Generación de datos sintéticos realistas
+
+### **Bases de Datos y SQL**
+![Postgres](https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white)
+![MySQL](https://img.shields.io/badge/mysql-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white)
+![MicrosoftSQLServer](https://img.shields.io/badge/Microsoft%20SQL%20Server-CC2927?style=for-the-badge&logo=microsoft%20sql%20server&logoColor=white)
 
 **SQL**
 - `SQL Avanzado`- CTEs (Common Table Expressions), Window Functions, Subconsultas correlacionadas
@@ -42,8 +42,9 @@ Busco mi primera oportunidad como **Practicante de Análisis de Datos / Data Ana
 ---
 
 ### **Business Intelligence & Visualización**
-![Power BI](https://img.shields.io/badge/Power_BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)
-![Excel](https://img.shields.io/badge/Excel-217346?style=for-the-badge&logo=microsoft-excel&logoColor=white)
+![Tableau](https://img.shields.io/badge/Tableau-E97627?style=for-the-badge&logo=Tableau&logoColor=white)
+![Power Bi](https://img.shields.io/badge/power_bi-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)
+![Microsoft Excel](https://img.shields.io/badge/Microsoft_Excel-217346?style=for-the-badge&logo=microsoft-excel&logoColor=white)
 
 **Tableau Desktop**
 - Dashboards interactivos profesionales
@@ -65,6 +66,8 @@ Busco mi primera oportunidad como **Practicante de Análisis de Datos / Data Ana
 
 ---
 ### **Arquitectura de Datos & Data Warehousing**
+![Data Warehouse](https://img.shields.io/badge/Data%20Warehouse-Kimball-blue?style=for-the-badge)
+![ETL](https://img.shields.io/badge/ETL-Pipeline-green?style=for-the-badge)
 
 **Modelado Dimensional**
 - Diseño de esquema estrella (Star Schema) - Metodología Kimball
