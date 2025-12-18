@@ -11,6 +11,7 @@ Tableau Desktop - Dashboards ejecutivos profesionales
 Modelado Dimensional - Esquema Estrella (Kimball Methodology)
 
 --
+
 **Objetivos del Proyecto**
 Objetivo Principal
 Diseñar e implementar una arquitectura completa de análisis de datos que permita a la gerencia tomar decisiones estratégicas basadas en información actualizada sobre operaciones, ventas y servicios veterinarios.
