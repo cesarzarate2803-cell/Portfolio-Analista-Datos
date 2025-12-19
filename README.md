@@ -273,15 +273,14 @@ Busco una posición como **Practicante de Análisis de Datos / Junior Data Analy
 - Desarrollar soluciones de **BI** que optimicen procesos y generen valor medible
 - Colaborar en equipos multidisciplinarios aportando una visión analítica
 
-**Disponibilidad**: Inmediata para prácticas profesionales (3 meses - 6 año)
+**Disponibilidad**: Inmediata para prácticas profesionales
 
 ---
 
 ## Contacto
 
-**Email**: cesar.zarate@ejemplo.com  
-**LinkedIn**: ([https://linkedin.com/in/tu-perfil](https://www.linkedin.com/in/cesar-zarate-02a40b328))  
-**GitHub**: [github.com/cesarzarate](https://github.com/tu-usuario)
+**Email**: cesar.zarate2803@gmail.com  
+**LinkedIn**: ([https://linkedin.com/in/cesar-zarate-data-analyst](www.linkedin.com/in/cesar-zarate-data-analyst))  
 
 ---
 
