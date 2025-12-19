@@ -336,5 +336,5 @@ Estoy abierto a:
 ---
 
 **Última actualización**: Diciembre 2025 
-**Versión**: 3.0 - Portfolio con Arquitectura de Datos & Data Warehousing
+**Versión**: 3.0 - Portfolio para Analista de Datos
 
