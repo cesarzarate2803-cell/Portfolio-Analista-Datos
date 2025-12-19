@@ -279,8 +279,8 @@ Busco una posición como **Practicante de Análisis de Datos / Junior Data Analy
 
 ## Contacto
 
-**Email**: cesar.zarate2803@gmail.com  
-**LinkedIn**: ([https://linkedin.com/in/cesar-zarate-data-analyst](www.linkedin.com/in/cesar-zarate-data-analyst))  
+**Email**: cesar.zarate2803@gmail.com 
+**LinkedIn**: www.linkedin.com/in/cesar-zarate-data-analyst 
 
 ---
 
